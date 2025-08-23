@@ -19,7 +19,7 @@ export const CommunicationSection = () => {
               key={tool.id}
               glowColor={tool.color}
               customSize={true}
-              className="aspect-[16/9] w-full max-w-sm mx-auto"
+              className="aspect-[16/9] w-full max-w-sm mx-auto communication-card-gradient"
             >
               <div className="flex flex-col justify-center items-center h-full text-center p-6">
                 {/* Icon */}

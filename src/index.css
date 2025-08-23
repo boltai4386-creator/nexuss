@@ -334,6 +334,19 @@ body {
   background: linear-gradient(90deg, transparent, rgba(124, 252, 0, 0.3), transparent);
 }
 
+/* Communication Cards Gradient Background */
+.communication-card-gradient {
+  background-color: #0c0c0c;
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.25), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(236, 72, 153, 0.2), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(59, 130, 246, 0.15), transparent 40%),
+    url("https://grainy-gradients.vercel.app/noise.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
 /* 3D Cards Styles */
 .card-3d-parent {
   width: 300px;
