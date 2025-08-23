@@ -8,6 +8,7 @@ import { FeatureCards } from './components/features/FeatureCards';
 import { FAQSection } from './components/faq/FAQSection';
 import { TestimonialsSection } from './components/testimonials/TestimonialsSection';
 import { CommunicationSection } from './components/communication/CommunicationSection';
+import { Footer } from './components/footer/Footer';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
       <FAQSection />
       <TestimonialsSection />
       <CommunicationSection />
-      
+      <Footer />
     </>
   );
 }
