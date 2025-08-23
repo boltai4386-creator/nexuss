@@ -1,0 +1,107 @@
+import { Square, Box } from 'lucide-react';
+import { Navigation } from './Navigation';
+import { ServicesCarousel } from './ServicesCarousel';
+import { Stats } from './Stats';
+import { AnimatedSection } from '../ui/AnimatedSection';
+import { ShootingStars } from '../ui/shooting-stars';
+
+export const Hero = () => {
+  return (
+    <div className="min-h-screen bg-black text-white relative overflow-hidden page-loaded">
+      {/* Shooting stars background */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Static stars background */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.15)_0%,rgba(0,0,0,0)_80%)]" />
+        <div className="stars absolute inset-0" />
+        
+        {/* Multiple shooting star layers */}
+        <ShootingStars
+          starColor="#7CFC00"
+          trailColor="#6CE400"
+          minSpeed={15}
+          maxSpeed={35}
+          minDelay={1000}
+          maxDelay={3000}
+        />
+        <ShootingStars
+          starColor="#00FF9E"
+          trailColor="#00B8FF"
+          minSpeed={10}
+          maxSpeed={25}
+          minDelay={2000}
+          maxDelay={4000}
+        />
+        <ShootingStars
+          starColor="#9E00FF"
+          trailColor="#2EB9DF"
+          minSpeed={20}
+          maxSpeed={40}
+          minDelay={1500}
+          maxDelay={3500}
+        />
+      </div>
+
+      <div className="relative z-10 container mx-auto px-4 pt-8 pb-16">
+        <Navigation />
+
+        <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+          <AnimatedSection delay={300} className="mb-6">
+            <div className="bg-zinc-900/80 rounded-full px-5 py-2 backdrop-blur-sm inline-flex items-center gap-2">
+              <span className="text-yellow-400 waving-hand">👋</span>
+              <span>Make your content shine!</span>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={500} className="mb-6 relative">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading">
+              <span className="text-[#7CFC00]">Content</span> For Brands & Creators!
+              
+              {/* Decorative elements */}
+              <div className="absolute -left-24 -bottom-12 opacity-80 pointer-events-none">
+                <div className="adobe-logo-left">
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                    AE
+                  </div>
+                </div>
+              </div>
+              <div className="absolute -right-16 top-0 opacity-80 pointer-events-none">
+                <div className="adobe-logo-right">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-700 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                    PR
+                  </div>
+                </div>
+              </div>
+            </h1>
+          </AnimatedSection>
+
+          <AnimatedSection delay={700} className="mb-12 max-w-3xl">
+            <p className="text-gray-400 text-lg font-body">
+              We help brands create better content with editing, ideation, packaging, and everything else in between.
+            </p>
+          </AnimatedSection>
+
+          <AnimatedSection delay={900} className="relative mb-20">
+            <button className="bg-[#7CFC00] hover:bg-[#6CE400] text-black font-medium px-8 py-3 rounded-full transition-all shadow-[0_0_15px_rgba(124,252,0,0.5)] hover:shadow-[0_0_25px_rgba(124,252,0,0.8)]">
+              Let's Work Together
+            </button>
+            <div className="absolute -bottom-14 right-0 text-[#7CFC00] opacity-70">
+              <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 30C30 10 40 40 60 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                <path
+                  d="M50 20L60 20L60 30"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+          </AnimatedSection>
+
+          <ServicesCarousel />
+          <Stats />
+        </div>
+      </div>
+    </div>
+  );
+};
