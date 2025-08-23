@@ -3,7 +3,7 @@ import { Play } from 'lucide-react';
 export const VideoSection = () => {
   return (
     <section className="relative w-full h-[800px] bg-black flex items-center justify-center">
-      <div className="relative w-[60%] rounded-xl overflow-hidden video-container video-container-mobile">
+      <div className="relative w-[60%] rounded-xl overflow-hidden video-container">
         <div className="absolute inset-0 video-border"></div>
         <video
           className="w-full rounded-xl shadow-2xl relative z-10"

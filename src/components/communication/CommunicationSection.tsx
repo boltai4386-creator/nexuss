@@ -13,13 +13,13 @@ export const CommunicationSection = () => {
         </div>
 
         {/* Communication Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto communication-mobile">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {communicationTools.map((tool) => (
             <GlowCard
               key={tool.id}
               glowColor={tool.color}
               customSize={true}
-              className="aspect-[16/9] w-full max-w-sm mx-auto communication-card-gradient communication-card-mobile"
+              className="aspect-[16/9] w-full max-w-sm mx-auto communication-card-gradient"
             >
               <div className="flex flex-col justify-center items-center h-full text-center p-6">
                 {/* Icon */}

@@ -42,11 +42,9 @@ export const Hero = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 pt-8 pb-16">
-        <div className="nav-mobile">
-          <Navigation />
-        </div>
+        <Navigation />
 
-        <div className="flex flex-col items-center text-center max-w-4xl mx-auto hero-mobile-padding">
+        <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           <AnimatedSection delay={300} className="mb-6">
             <div className="bg-zinc-900/80 rounded-full px-5 py-2 backdrop-blur-sm inline-flex items-center gap-2">
               <span className="text-yellow-400 waving-hand">👋</span>
@@ -55,7 +53,7 @@ export const Hero = () => {
           </AnimatedSection>
 
           <AnimatedSection delay={500} className="mb-6 relative">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading hero-title-mobile">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading">
               <span className="text-[#7CFC00]">Content</span> For Brands & Creators!
               
               {/* Decorative elements */}
@@ -77,7 +75,7 @@ export const Hero = () => {
           </AnimatedSection>
 
           <AnimatedSection delay={700} className="mb-12 max-w-3xl">
-            <p className="text-gray-400 text-lg font-body hero-subtitle-mobile">
+            <p className="text-gray-400 text-lg font-body">
               We help brands create better content with editing, ideation, packaging, and everything else in between.
             </p>
           </AnimatedSection>
@@ -101,7 +99,7 @@ export const Hero = () => {
           </AnimatedSection>
 
           <ServicesCarousel />
-          <div className="stats-mobile"><Stats /></div>
+          <Stats />
         </div>
       </div>
     </div>

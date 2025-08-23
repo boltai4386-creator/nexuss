@@ -3,7 +3,7 @@ import { Instagram, Linkedin, Globe } from 'lucide-react';
 export const Footer = () => {
   return (
     <footer className="footer-gradient py-8 mt-20">
-      <div className="container mx-auto px-4 footer-mobile">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-6">
           {/* Brand Name */}
           <h3 className="text-2xl font-bold text-white font-heading tracking-wider">

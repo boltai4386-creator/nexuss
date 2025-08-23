@@ -59,7 +59,7 @@ export const FAQSection = () => {
 
   return (
     <section className="py-20 bg-black relative overflow-hidden" aria-label="Frequently Asked Questions">
-      <div className="container mx-auto px-4 max-w-4xl faq-mobile-padding">
+      <div className="container mx-auto px-4 max-w-4xl">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
@@ -84,7 +84,7 @@ export const FAQSection = () => {
                 aria-expanded={openFAQ === faq.id}
                 aria-controls={`faq-answer-${faq.id}`}
               >
-                <span className="text-white font-semibold text-lg pr-4 font-body faq-question-mobile">
+                <span className="text-white font-semibold text-lg pr-4 font-body">
                   {faq.question}
                 </span>
                 
