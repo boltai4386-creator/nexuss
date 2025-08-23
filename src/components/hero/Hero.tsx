@@ -53,20 +53,20 @@ export const Hero = () => {
           </AnimatedSection>
 
           <AnimatedSection delay={500} className="mb-6 relative">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-heading">
               <span className="text-[#7CFC00]">Content</span> For Brands & Creators!
               
               {/* Decorative elements */}
-              <div className="absolute -left-24 -bottom-12 opacity-80 pointer-events-none">
+              <div className="absolute -left-12 sm:-left-16 md:-left-24 -bottom-8 sm:-bottom-10 md:-bottom-12 opacity-80 pointer-events-none">
                 <div className="adobe-logo-left">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center text-white font-bold text-sm sm:text-base md:text-lg shadow-lg">
                     AE
                   </div>
                 </div>
               </div>
-              <div className="absolute -right-16 top-0 opacity-80 pointer-events-none">
+              <div className="absolute -right-8 sm:-right-12 md:-right-16 top-0 opacity-80 pointer-events-none">
                 <div className="adobe-logo-right">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-700 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-gradient-to-br from-blue-600 to-purple-700 rounded-lg flex items-center justify-center text-white font-bold text-sm sm:text-base md:text-lg shadow-lg">
                     PR
                   </div>
                 </div>
@@ -75,17 +75,17 @@ export const Hero = () => {
           </AnimatedSection>
 
           <AnimatedSection delay={700} className="mb-12 max-w-3xl">
-            <p className="text-gray-400 text-lg font-body">
+            <p className="text-gray-400 text-base sm:text-lg font-body px-4">
               We help brands create better content with editing, ideation, packaging, and everything else in between.
             </p>
           </AnimatedSection>
 
           <AnimatedSection delay={900} className="relative mb-20">
-            <button className="bg-[#7CFC00] hover:bg-[#6CE400] text-black font-medium px-8 py-3 rounded-full transition-all shadow-[0_0_15px_rgba(124,252,0,0.5)] hover:shadow-[0_0_25px_rgba(124,252,0,0.8)]">
+            <button className="bg-[#7CFC00] hover:bg-[#6CE400] text-black font-medium px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base rounded-full transition-all shadow-[0_0_15px_rgba(124,252,0,0.5)] hover:shadow-[0_0_25px_rgba(124,252,0,0.8)]">
               Let's Work Together
             </button>
-            <div className="absolute -bottom-14 right-0 text-[#7CFC00] opacity-70">
-              <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="absolute -bottom-10 sm:-bottom-14 right-0 sm:right-4 text-[#7CFC00] opacity-70">
+              <svg width="50" height="50" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-[70px] sm:h-[70px]">
                 <path d="M10 30C30 10 40 40 60 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                 <path
                   d="M50 20L60 20L60 30"

@@ -62,10 +62,10 @@ export const FAQSection = () => {
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 font-heading px-4">
             Frequently Asked <span className="text-[#7CFC00]">Questions</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto font-body">
+          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto font-body px-4">
             Get answers to the most common questions about our content creation services
           </p>
         </div>
@@ -80,20 +80,20 @@ export const FAQSection = () => {
               {/* Question Button */}
               <button
                 onClick={() => toggleFAQ(faq.id)}
-                className="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[#7CFC00]/50 focus:ring-inset transition-all duration-300 hover:bg-zinc-800/30"
+                className="w-full px-4 sm:px-6 py-4 sm:py-6 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[#7CFC00]/50 focus:ring-inset transition-all duration-300 hover:bg-zinc-800/30"
                 aria-expanded={openFAQ === faq.id}
                 aria-controls={`faq-answer-${faq.id}`}
               >
-                <span className="text-white font-semibold text-lg pr-4 font-body">
+                <span className="text-white font-semibold text-base sm:text-lg pr-4 font-body">
                   {faq.question}
                 </span>
                 
                 {/* Icon Indicator */}
                 <div className="flex-shrink-0 transition-transform duration-300">
                   {openFAQ === faq.id ? (
-                    <Minus className="w-6 h-6 text-[#7CFC00]" />
+                    <Minus className="w-5 h-5 sm:w-6 sm:h-6 text-[#7CFC00]" />
                   ) : (
-                    <Plus className="w-6 h-6 text-gray-400" />
+                    <Plus className="w-5 h-5 sm:w-6 sm:h-6 text-gray-400" />
                   )}
                 </div>
               </button>
@@ -108,9 +108,9 @@ export const FAQSection = () => {
                 }`}
                 aria-hidden={openFAQ !== faq.id}
               >
-                <div className="px-6 pb-6 pt-2">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2">
                   <div className="h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent mb-4"></div>
-                  <p className="text-gray-300 leading-relaxed font-body">
+                  <p className="text-gray-300 text-sm sm:text-base leading-relaxed font-body">
                     {faq.answer}
                   </p>
                 </div>

@@ -22,7 +22,7 @@ export const FeatureCards = () => {
   return (
     <section className="relative z-10 py-10 bg-black">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 relative">
           {features.map((feature, index) => (
             <div key={feature.title} className="flex justify-center relative">
               <div className="card-3d-parent">

@@ -692,9 +692,49 @@ body {
 
 @media (max-width: 768px) {
   .carousel-set {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-set {
     grid-template-columns: 1fr;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 640px) {
+  .card-3d-parent {
+    width: 280px;
+    height: 300px;
+  }
+  
+  .content-3d {
+    padding: 70px 30px 0px 20px;
+  }
+  
+  .content-3d .title-3d {
+    font-size: 18px;
+  }
+  
+  .content-3d .text-3d {
+    font-size: 12px;
+  }
+  
+  .bottom-3d {
+    padding: 10px 12px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+  
+  .bottom-3d .social-buttons-container-3d .social-button-3d {
+    width: 28px;
+  }
+  
+  .bottom-3d .view-more-3d .view-more-button-3d {
+    font-size: 11px;
   }
 }
 /* Long-form video showcase styles */

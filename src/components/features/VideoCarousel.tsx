@@ -54,14 +54,14 @@ export const VideoCarousel = () => {
           {/* Video Grid */}
           <div className="carousel-container overflow-hidden rounded-xl">
             <div 
-              className="carousel-track flex transition-transform duration-500 ease-in-out"
+              className="carousel-track flex transition-transform duration-500 ease-in-out px-4 sm:px-8 md:px-16"
               style={{ transform: `translateX(-${currentSet * 100}%)` }}
             >
               {/* Video Set */}
-              <div className="carousel-set flex-shrink-0 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-16">
+              <div className="carousel-set flex-shrink-0 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {videos.map((video) => (
                   <div key={video.id} className="video-card group">
-                    <div className="relative aspect-[9/16] bg-zinc-900 rounded-lg overflow-hidden max-w-[320px] mx-auto">
+                    <div className="relative aspect-[9/16] bg-zinc-900 rounded-lg overflow-hidden max-w-[280px] sm:max-w-[320px] mx-auto">
                       <iframe
                         src={video.url}
                         className="w-full h-full"
