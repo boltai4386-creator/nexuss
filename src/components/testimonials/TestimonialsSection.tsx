@@ -38,12 +38,14 @@ export const TestimonialsSection = () => {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center testimonials-mobile">
           {/* Video Testimonials */}
           <AnimatedSection delay={400} className="flex justify-center flex-col items-center">
-            <PhoneFrame>
+            <div className="phone-frame-mobile">
+              <PhoneFrame>
               <VideoPlayer testimonial={videoTestimonials[currentVideo]} />
-            </PhoneFrame>
+              </PhoneFrame>
+            </div>
             
             {/* Navigation Buttons */}
             <div className="flex items-center justify-center gap-6 mt-4">
@@ -80,7 +82,7 @@ export const TestimonialsSection = () => {
           </AnimatedSection>
 
           {/* Text Testimonials */}
-          <AnimatedSection delay={600} className="grid grid-cols-2 gap-8">
+          <AnimatedSection delay={600} className="grid grid-cols-2 gap-8 testimonial-columns-mobile">
             <TextTestimonialSlider testimonials={textTestimonials} direction="up" />
             <TextTestimonialSlider testimonials={[...textTestimonials].reverse()} direction="down" />
           </AnimatedSection>

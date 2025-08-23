@@ -67,10 +67,10 @@ export const ThumbnailShowcase = () => {
   return (
     <section className="py-16 bg-black relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row gap-8 items-center">
+        <div className="flex flex-col lg:flex-row gap-8 items-center thumbnail-showcase-mobile">
           {/* Thumbnail Area */}
           <div className="w-full lg:w-1/2 relative group">
-            <div className="relative max-w-[640px] mx-auto aspect-video bg-zinc-900 rounded-xl overflow-hidden">
+            <div className="relative max-w-[640px] mx-auto aspect-video bg-zinc-900 rounded-xl overflow-hidden thumbnail-iframe-mobile">
               <iframe
                 key={currentIndex}
                 src={currentThumbnail.videoSrc}

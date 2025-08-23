@@ -5,7 +5,7 @@ import { stats } from '../../data/stats';
 export const Stats = () => {
   return (
     <AnimatedSection delay={1300} className="w-full max-w-5xl">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 stats-mobile">
         {stats.map((stat, index) => (
           <div
             key={index}

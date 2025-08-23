@@ -723,3 +723,277 @@ body {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Hero Section Mobile */
+  .hero-mobile-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Typography Mobile */
+  .hero-title-mobile {
+    font-size: 2.5rem !important;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle-mobile {
+    font-size: 1rem !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Navigation Mobile */
+  .nav-mobile {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-mobile > div {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Stats Grid Mobile */
+  .stats-mobile {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem;
+  }
+
+  /* Feature Cards Mobile */
+  .feature-cards-mobile {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+  }
+
+  .card-3d-parent {
+    width: 100% !important;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Client Showcase Mobile */
+  .client-card {
+    min-width: 280px;
+  }
+
+  /* Video Sections Mobile */
+  .video-container-mobile {
+    width: 90% !important;
+    max-width: 400px;
+  }
+
+  .video-showcase-mobile {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .video-showcase-mobile > div {
+    width: 100% !important;
+  }
+
+  /* Thumbnail Showcase Mobile */
+  .thumbnail-showcase-mobile {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .thumbnail-showcase-mobile > div {
+    width: 100% !important;
+  }
+
+  .thumbnail-iframe-mobile {
+    max-width: 100%;
+    height: 250px;
+  }
+
+  /* Long Form Video Mobile */
+  .longform-grid-mobile {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+
+  /* FAQ Section Mobile */
+  .faq-mobile-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .faq-item {
+    margin-bottom: 1rem;
+  }
+
+  .faq-question-mobile {
+    font-size: 1rem !important;
+    padding: 1rem;
+  }
+
+  /* Testimonials Mobile */
+  .testimonials-mobile {
+    grid-template-columns: 1fr !important;
+    gap: 3rem;
+  }
+
+  .testimonial-columns-mobile {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  /* Communication Cards Mobile */
+  .communication-mobile {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+
+  /* Process Section Mobile */
+  .process-mobile {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .process-step {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    margin-bottom: 2rem !important;
+  }
+
+  .process-number {
+    width: 100% !important;
+    font-size: 3rem !important;
+    padding-top: 0 !important;
+  }
+
+  .process-content {
+    padding-top: 0 !important;
+  }
+
+  /* Hide process line on mobile */
+  .process-step .absolute {
+    display: none;
+  }
+
+  /* Footer Mobile */
+  .footer-mobile {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .footer-mobile .flex-col {
+    gap: 1rem;
+  }
+
+  .footer-mobile .flex-col.md\\:flex-row {
+    flex-direction: column !important;
+    gap: 1rem;
+  }
+
+  /* Services Carousel Mobile */
+  .services-carousel {
+    padding: 0 1rem;
+  }
+
+  .service-item {
+    padding: 0.25rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  /* Adobe logos hide on mobile */
+  .adobe-logo-left,
+  .adobe-logo-right {
+    display: none;
+  }
+
+  /* Button Mobile */
+  .cta-button-mobile {
+    padding: 0.75rem 2rem !important;
+    font-size: 1rem;
+  }
+
+  /* Video Carousel Mobile */
+  .carousel-container {
+    padding: 0 1rem;
+  }
+
+  .carousel-set {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Phone Frame Mobile */
+  .phone-frame-mobile {
+    width: 240px !important;
+    height: 480px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small mobile devices */
+  .hero-title-mobile {
+    font-size: 2rem !important;
+  }
+
+  .stats-mobile {
+    grid-template-columns: 1fr !important;
+  }
+
+  .client-card {
+    min-width: 250px;
+  }
+
+  .video-container-mobile {
+    width: 95% !important;
+  }
+
+  .thumbnail-iframe-mobile {
+    height: 200px;
+  }
+
+  .faq-question-mobile {
+    font-size: 0.875rem !important;
+  }
+
+  .process-number {
+    font-size: 2.5rem !important;
+  }
+
+  .phone-frame-mobile {
+    width: 200px !important;
+    height: 400px !important;
+  }
+
+  .service-item {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  /* Communication cards smaller on mobile */
+  .communication-card-mobile {
+    max-width: 280px !important;
+  }
+}
+
+/* Touch-friendly interactive elements */
+@media (max-width: 768px) {
+  button, .social-button-3d, .view-more-button-3d {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Ensure text is readable */
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Improve touch targets */
+  a, button {
+    padding: 0.5rem;
+  }
+
+  /* Better spacing for mobile */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

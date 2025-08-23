@@ -76,7 +76,7 @@ export const ProcessSection = () => {
 
   return (
     <section className="py-24 bg-black relative overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 process-mobile">
         <h2 className="text-4xl font-bold text-center mb-20">
           Our <span className="text-[#00ff75]">Process</span>
         </h2>
