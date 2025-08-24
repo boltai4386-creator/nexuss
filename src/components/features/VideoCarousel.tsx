@@ -4,6 +4,7 @@ import { videos } from '../../data/videos';
 
 export const VideoCarousel = () => {
   const [currentSet, setCurrentSet] = useState(0);
+  const [currentMobileVideo, setCurrentMobileVideo] = useState(0);
   const totalSets = 1; // Only one set now with 3 videos
   const videosPerSet = 3;
 
@@ -19,12 +20,20 @@ export const VideoCarousel = () => {
     }
   };
 
+  const handleMobilePrevious = () => {
+    setCurrentMobileVideo((prev) => (prev === 0 ? videos.length - 1 : prev - 1));
+  };
+
+  const handleMobileNext = () => {
+    setCurrentMobileVideo((prev) => (prev === videos.length - 1 ? 0 : prev + 1));
+  };
+
   return (
     <section className="py-16 bg-black relative overflow-hidden">
       <div className="container mx-auto px-4">
-        {/* Video Carousel Container */}
-        <div className="relative max-w-6xl mx-auto">
-          {/* Navigation Buttons */}
+        {/* Desktop Video Carousel Container */}
+        <div className="relative max-w-6xl mx-auto hidden md:block">
+          {/* Desktop Navigation Buttons */}
           <button
             onClick={handlePrevious}
             disabled={currentSet === 0}
@@ -51,7 +60,7 @@ export const VideoCarousel = () => {
             <ChevronRight className="w-6 h-6" />
           </button>
 
-          {/* Video Grid */}
+          {/* Desktop Video Grid */}
           <div className="carousel-container overflow-hidden rounded-xl">
             <div 
               className="carousel-track flex transition-transform duration-500 ease-in-out px-4 sm:px-8 md:px-16"
@@ -76,7 +85,7 @@ export const VideoCarousel = () => {
             </div>
           </div>
 
-          {/* Navigation Dots */}
+          {/* Desktop Navigation Dots */}
           <div className="flex justify-center gap-2 mt-8">
             {Array.from({ length: totalSets }).map((_, index) => (
               <button
@@ -90,6 +99,59 @@ export const VideoCarousel = () => {
                 aria-label={`Go to video set ${index + 1}`}
               />
             ))}
+          </div>
+        </div>
+
+        {/* Mobile Video Carousel Container */}
+        <div className="relative max-w-sm mx-auto md:hidden">
+          {/* Mobile Single Video Display */}
+          <div className="relative">
+            <div className="video-card group">
+              <div className="relative aspect-[9/16] bg-zinc-900 rounded-lg overflow-hidden">
+                <iframe
+                  src={videos[currentMobileVideo].url}
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile Navigation Buttons - Below Video */}
+          <div className="flex justify-center items-center gap-4 mt-6">
+            <button
+              onClick={handleMobilePrevious}
+              className="w-12 h-12 rounded-full bg-black/70 text-white hover:bg-black/90 hover:scale-110 flex items-center justify-center transition-all duration-300 touch-manipulation"
+              aria-label="Previous video"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+
+            {/* Mobile Navigation Dots */}
+            <div className="flex gap-2">
+              {videos.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentMobileVideo(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 touch-manipulation ${
+                    index === currentMobileVideo
+                      ? 'bg-[#00ff75] scale-110'
+                      : 'bg-gray-600 hover:bg-gray-500'
+                  }`}
+                  aria-label={`Go to video ${index + 1}`}
+                />
+              ))}
+            </div>
+
+            <button
+              onClick={handleMobileNext}
+              className="w-12 h-12 rounded-full bg-black/70 text-white hover:bg-black/90 hover:scale-110 flex items-center justify-center transition-all duration-300 touch-manipulation"
+              aria-label="Next video"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
           </div>
         </div>
       </div>

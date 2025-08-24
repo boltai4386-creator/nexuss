@@ -737,6 +737,60 @@ body {
     font-size: 11px;
   }
 }
+
+/* Mobile Video Gallery Specific Styles */
+@media (max-width: 768px) {
+  /* Ensure mobile video container is properly sized */
+  .mobile-video-container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  /* Mobile navigation buttons styling */
+  .mobile-nav-button {
+    min-width: 44px;
+    min-height: 44px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Mobile video aspect ratio optimization */
+  .mobile-video-wrapper {
+    aspect-ratio: 9/16;
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  /* Touch-friendly navigation dots */
+  .mobile-nav-dot {
+    min-width: 24px;
+    min-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
+  }
+  
+  .mobile-nav-dot::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: currentColor;
+  }
+}
+
+/* Smooth transitions for mobile video switching */
+@media (max-width: 768px) {
+  .mobile-video-transition {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .mobile-video-transition.changing {
+    opacity: 0.7;
+    transform: scale(0.98);
+  }
+}
 /* Long-form video showcase styles */
 .line-clamp-2 {
   display: -webkit-box;
