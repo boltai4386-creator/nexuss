@@ -27,7 +27,7 @@ export const videoTestimonials: VideoTestimonial[] = [
 export const textTestimonials: TextTestimonial[] = [
   {
     id: 1,
-    content: "Working with this team has been transformative for our business. Their attention to detail and innovative solutions have helped us achieve remarkable growth.",
+    content: "exceeded expectations. no questions he took the project and completed on his own and very satisfied with the results.",
     author: "David Wilson",
     company: "GrowthTech Solutions"
   },
