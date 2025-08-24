@@ -740,6 +740,17 @@ body {
 
 /* Mobile Video Gallery Specific Styles */
 @media (max-width: 768px) {
+  /* Testimonials Section Mobile Styles */
+  .testimonials-mobile-single-column .grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+  }
+  
+  .testimonials-mobile-text {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+  
   /* Ensure mobile video container is properly sized */
   .mobile-video-container {
     max-width: 320px;
