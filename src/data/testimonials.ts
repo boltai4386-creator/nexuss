@@ -28,8 +28,8 @@ export const textTestimonials: TextTestimonial[] = [
   {
     id: 1,
     content: "exceeded expectations. no questions he took the project and completed on his own and very satisfied with the results.",
-    author: "David Wilson",
-    company: "GrowthTech Solutions"
+    author: "leotavdgiridze",
+    company: "Georgia"
   },
   {
     id: 2,
@@ -39,20 +39,26 @@ export const textTestimonials: TextTestimonial[] = [
   },
   {
     id: 3,
-    content: "Their design expertise and technical prowess created a website that not only looks stunning but performs exceptionally well. Couldn't be happier!",
-    author: "James Anderson",
-    company: "Digital Ventures"
+    content: "He did an amazing job and went above and beyond! Will return to him for more work!!",
+    author: "wdkap18",
+    company: "United States"
   },
   {
     id: 4,
-    content: "The custom web development solutions delivered by the team exceeded our expectations. Our conversion rates have doubled since launch.",
-    author: "Maria Garcia",
-    company: "E-commerce Plus"
+    content: "Working with Nexus Growthh was an outstanding experience! His PROFESSIONALISM in video editing and language FLUENCY made the project a breeze. Highly recommend! 👍",
+    author: "seasidecommerce",
+    company: "United States"
   },
   {
     id: 5,
-    content: "Outstanding service and remarkable results. The team's dedication to excellence is evident in every aspect of their work.",
-    author: "Tom Bradley",
-    company: "Innovation Hub"
+    content: "a very good freelancer. The price-performance ratio is also top. This collaboration was really fun and through direct and fast communication we quickly came to a very good end result. Highly recommended!",
+    author: "agathagroup",
+    company: "Germany"
+  },
+  {
+    id: 7,
+    content: "Really amazing VSL done by Nexus Growthh, highly recommend it and would use it again! 🔥",
+    author: "s_maeuk",
+    company: "United Kingdom"
   }
 ];
