@@ -78,9 +78,46 @@ export const TestimonialsSection = () => {
           </div>
 
           {/* Text Testimonials */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <TextTestimonialSlider testimonials={textTestimonials} direction="up" />
-            <TextTestimonialSlider testimonials={[...textTestimonials].reverse()} direction="down" />
+          <div className="testimonials-mobile-single-column">
+            {/* Desktop: Two column sliders */}
+            <div className="hidden lg:grid grid-cols-2 gap-8">
+              <TextTestimonialSlider testimonials={textTestimonials} direction="up" />
+              <TextTestimonialSlider testimonials={[...textTestimonials].reverse()} direction="down" />
+            </div>
+            
+            {/* Mobile: Single horizontal slider */}
+            <div className="lg:hidden">
+              <div className="mobile-testimonial-slider overflow-hidden">
+                <div className="mobile-testimonial-track">
+                  {/* First set */}
+                  {textTestimonials.map((testimonial) => (
+                    <div
+                      key={testimonial.id}
+                      className="mobile-testimonial-card bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 space-y-4 flex-shrink-0"
+                    >
+                      <p className="text-white/90 leading-relaxed text-sm">"{testimonial.content}"</p>
+                      <div>
+                        <p className="text-white font-medium text-sm">{testimonial.author}</p>
+                        <p className="text-white/60 text-xs">{testimonial.company}</p>
+                      </div>
+                    </div>
+                  ))}
+                  {/* Duplicate set for seamless loop */}
+                  {textTestimonials.map((testimonial) => (
+                    <div
+                      key={`${testimonial.id}-clone`}
+                      className="mobile-testimonial-card bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 space-y-4 flex-shrink-0"
+                    >
+                      <p className="text-white/90 leading-relaxed text-sm">"{testimonial.content}"</p>
+                      <div>
+                        <p className="text-white font-medium text-sm">{testimonial.author}</p>
+                        <p className="text-white/60 text-xs">{testimonial.company}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

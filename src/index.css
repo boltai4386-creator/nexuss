@@ -738,6 +738,58 @@ body {
   }
 }
 
+/* Mobile Testimonial Slider Styles */
+@media (max-width: 1024px) {
+  .mobile-testimonial-slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+  }
+  
+  .mobile-testimonial-track {
+    display: flex;
+    gap: 1rem;
+    animation: scroll-horizontal 25s linear infinite;
+    width: fit-content;
+  }
+  
+  .mobile-testimonial-card {
+    width: 280px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-50% - 0.5rem));
+    }
+  }
+  
+  /* Pause animation on hover */
+  .mobile-testimonial-slider:hover .mobile-testimonial-track {
+    animation-play-state: paused;
+  }
+}
+
 /* Mobile Video Gallery Specific Styles */
 @media (max-width: 768px) {
   /* Testimonials Section Mobile Styles */
