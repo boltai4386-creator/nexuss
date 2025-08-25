@@ -1,6 +1,6 @@
 import { Hero } from './components/hero/Hero';
 import { ClientShowcase } from './components/clients/ClientShowcase';
-import { VideoSection } from './components/features/VideoSection';
+// import { VideoSection } from './components/features/VideoSection';
 import { VideoCarousel } from './components/features/VideoCarousel';
 import { LongFormVideoShowcase } from './components/features/LongFormVideoShowcase';
 import { ThumbnailShowcase } from './components/features/ThumbnailShowcase';
@@ -16,7 +16,7 @@ function App() {
       <Hero />
       
       <ClientShowcase />
-      <VideoSection />
+      {/* <VideoSection /> */}
       <FeatureCards />
       <VideoCarousel />
       <LongFormVideoShowcase />

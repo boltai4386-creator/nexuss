@@ -3,7 +3,7 @@ import { communicationTools } from '../../data/communication';
 
 export const CommunicationSection = () => {
   return (
-    <section className="py-20 bg-black relative overflow-hidden">
+    <section className="py-20 md:py-20 pb-12 md:pb-20 bg-black relative overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
