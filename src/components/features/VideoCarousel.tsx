@@ -29,8 +29,17 @@ export const VideoCarousel = () => {
   };
 
   return (
-    <section className="py-16 bg-black relative overflow-hidden">
+    <section className="py-16 bg-black relative overflow-hidden" id="video-showcase">
       <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
+            Short-Form <span className="text-[#7CFC00]">Videos</span>
+          </h2>
+          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto font-body">
+            Engaging vertical content optimized for social media platforms
+          </p>
+        </div>
+        
         {/* Desktop Video Carousel Container */}
         <div className="relative max-w-6xl mx-auto hidden md:block">
           {/* Desktop Navigation Buttons */}

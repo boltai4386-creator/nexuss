@@ -5,10 +5,10 @@ export const ClientShowcase = () => {
   const duplicatedClients = [...clients, ...clients]; // Duplicate for infinite scroll
 
   return (
-    <section className="w-full py-16" aria-label="Our top clients showcase">
+    <section className="w-full py-16" aria-label="Our top clients showcase" id="clients">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-12 text-white font-heading">
-          Our Best Clients
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 text-white font-heading">
+          Our <span className="text-[#7CFC00]">Best Clients</span>
         </h2>
         
         <div className="relative overflow-hidden">

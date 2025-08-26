@@ -84,7 +84,7 @@ export const Hero = () => {
             <button className="bg-[#7CFC00] hover:bg-[#6CE400] text-black font-medium px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base rounded-full transition-all shadow-[0_0_15px_rgba(124,252,0,0.5)] hover:shadow-[0_0_25px_rgba(124,252,0,0.8)]">
               Let's Work Together
             </button>
-            <div className="absolute -bottom-10 sm:-bottom-14 right-0 sm:right-4 text-[#7CFC00] opacity-70">
+            <div className="absolute -bottom-10 sm:-bottom-14 right-0 sm:right-4 text-[#7CFC00] opacity-70 hidden md:block">
               <svg width="50" height="50" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-[70px] sm:h-[70px]">
                 <path d="M10 30C30 10 40 40 60 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                 <path

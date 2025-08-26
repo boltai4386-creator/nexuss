@@ -65,8 +65,17 @@ export const ThumbnailShowcase = () => {
   };
 
   return (
-    <section className="py-16 bg-black relative overflow-hidden">
+    <section className="py-16 bg-black relative overflow-hidden" id="thumbnail-showcase">
       <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
+            Thumbnail <span className="text-[#7CFC00]">Design</span>
+          </h2>
+          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto font-body">
+            Eye-catching thumbnails and titles that drive clicks and engagement
+          </p>
+        </div>
+        
         <div className="flex flex-col lg:flex-row gap-8 items-center">
           {/* Thumbnail Area */}
           <div className="w-full lg:w-1/2 relative group">

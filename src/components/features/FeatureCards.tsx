@@ -20,8 +20,17 @@ const features = [
 
 export const FeatureCards = () => {
   return (
-    <section className="relative z-10 py-10 bg-black">
+    <section className="relative z-10 py-16 bg-black" id="features">
       <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
+            Why Choose <span className="text-[#7CFC00]">Us</span>
+          </h2>
+          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto font-body">
+            Three core principles that set us apart from the competition
+          </p>
+        </div>
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 relative">
           {features.map((feature, index) => (
             <div key={feature.title} className="flex justify-center relative">

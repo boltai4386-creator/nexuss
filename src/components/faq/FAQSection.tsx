@@ -58,7 +58,7 @@ export const FAQSection = () => {
   };
 
   return (
-    <section className="py-20 bg-black relative overflow-hidden" aria-label="Frequently Asked Questions">
+    <section className="py-20 bg-black relative overflow-hidden" aria-label="Frequently Asked Questions" id="faq">
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Section Header */}
         <div className="text-center mb-16">

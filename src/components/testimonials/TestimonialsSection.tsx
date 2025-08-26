@@ -17,7 +17,7 @@ export const TestimonialsSection = () => {
   };
 
   return (
-    <section className="py-12 md:py-32 pt-20 md:pt-32 pb-8 md:pb-32 relative overflow-hidden bg-black">
+    <section className="py-12 md:py-32 pt-20 md:pt-32 pb-8 md:pb-32 relative overflow-hidden bg-black" id="testimonials">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-[600px] h-[600px] border border-white/10 rounded-full -top-64 -left-32 animate-spin" 
