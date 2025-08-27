@@ -57,14 +57,14 @@ export const Hero = () => {
               <span className="text-[#7CFC00]">Content</span> For Brands & Creators!
               
               {/* Decorative elements */}
-              <div className="absolute -left-12 sm:-left-16 md:-left-24 -bottom-8 sm:-bottom-10 md:-bottom-12 opacity-80 pointer-events-none">
+              <div className="absolute -left-12 sm:-left-16 md:-left-24 -bottom-8 sm:-bottom-10 md:-bottom-12 opacity-80 pointer-events-none hidden md:block">
                 <div className="adobe-logo-left">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center text-white font-bold text-sm sm:text-base md:text-lg shadow-lg">
                     AE
                   </div>
                 </div>
               </div>
-              <div className="absolute -right-8 sm:-right-12 md:-right-16 top-0 opacity-80 pointer-events-none">
+              <div className="absolute -right-8 sm:-right-12 md:-right-16 top-0 opacity-80 pointer-events-none hidden md:block">
                 <div className="adobe-logo-right">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-gradient-to-br from-blue-600 to-purple-700 rounded-lg flex items-center justify-center text-white font-bold text-sm sm:text-base md:text-lg shadow-lg">
                     PR
